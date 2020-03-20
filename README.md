@@ -11,7 +11,7 @@ Compile-time syntax highlighting for code blocks with [Prism](https://prismjs.co
 Before:
 
 ```html
-<pre><code>
+<pre><code class="language-javascript">
   const foo = 'foo'
   console.log(foo)
 </code></pre>
