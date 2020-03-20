@@ -3,7 +3,6 @@
 [![Version][npm-version-shield]][npm]
 [![License][mit-shield]][mit]
 [![Build][travis-ci-shield]][travis-ci]
-[![Coverage][codecov-shield]][codecov]
 [![Downloads][npm-stats-shield]][npm-stats]
 
 Compile-time syntax highlighting for code blocks with [Prism](https://prismjs.com/).
@@ -106,7 +105,5 @@ In both cases, the `prism-ignore` attribute/class will be removed and highlighti
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-prism.svg?maxAge=2592000
 [travis-ci]: https://travis-ci.org/cossssmin/posthtml-prism/
 [travis-ci-shield]: https://img.shields.io/travis/cossssmin/posthtml-prism/master.svg
-[codecov]: https://codecov.io/gh/cossssmin/posthtml-prism
-[codecov-shield]: https://img.shields.io/codecov/c/github/cossssmin/posthtml-prism.svg
 [mit]: ./LICENSE
 [mit-shield]: https://img.shields.io/npm/l/posthtml-prism.svg
