@@ -103,7 +103,7 @@ In both cases, the `prism-ignore` attribute/class will be removed and highlighti
 [npm-version-shield]: https://img.shields.io/npm/v/posthtml-prism.svg
 [npm-stats]: http://npm-stat.com/charts.html?package=posthtml-prism&author=&from=&to=
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-prism.svg?maxAge=2592000
-[travis-ci]: https://travis-ci.org/cossssmin/posthtml-prism/
-[travis-ci-shield]: https://img.shields.io/travis/cossssmin/posthtml-prism/master.svg
+[travis-ci]: https://travis-ci.org/posthtml/posthtml-prism/
+[travis-ci-shield]: https://img.shields.io/travis/posthtml/posthtml-prism/master.svg
 [mit]: ./LICENSE
 [mit-shield]: https://img.shields.io/npm/l/posthtml-prism.svg
