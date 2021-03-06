@@ -51,6 +51,7 @@ posthtml([
 
 ### inline 
 
+Type: `boolean`\
 Default: `false`
 
 By default, only `<code>` tags wrapped in `<pre>` tags are highlighted. 
