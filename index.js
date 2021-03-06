@@ -39,13 +39,7 @@ function highlightNode(node) {
   node.attrs = attrs;
 
   if (node.content) {
-    let html = '';
-
-    if (node.content[0].tag && !node.content[0].content) {
-      html = `<${node.content[0].tag}>`;
-    } else {
-      html = render(node.content);
-    }
+    const html = (node.content[0].tag && !node.content[0].content) ? `<${node.content[0].tag}>` : render(node.content);
 
     node.content = mapStringOrNode(html, lang);
   }
