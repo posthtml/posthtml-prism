@@ -1,17 +1,22 @@
-# PostHTML Prism Plugin <img align="right" width="220" height="200" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg">
+<div align="center">
+  <img width="150" height="150" title="PostHTML" src="https://posthtml.github.io/posthtml/logo.svg">
+  <h1>Prism Syntax Highlighting</h1>
 
-[![Version][npm-version-shield]][npm]
-[![License][mit-shield]][mit]
-[![Build][github-ci-shield]][github-ci]
-[![Downloads][npm-stats-shield]][npm-stats]
+  Compile-time syntax highlighting for code blocks with [Prism](https://prismjs.com/)
 
-Compile-time syntax highlighting for code blocks with [Prism](https://prismjs.com/).
+  [![Version][npm-version-shield]][npm]
+  [![License][license-shield]][license]
+  [![Build][github-ci-shield]][github-ci]
+  [![Downloads][npm-stats-shield]][npm-stats]
+</div>
+
+## Introduction
 
 Before:
 
 ```html
 <pre><code class="language-javascript">
-  const foo = 'foo'
+  const foo = 'bar'
   console.log(foo)
 </code></pre>
 ```
@@ -20,7 +25,7 @@ After:
 
 ```html
 <pre><code class="language-javascript">
-  <span class="token keyword">const</span> foo <span class="token operator">=</span> <span class="token string">'foo'</span>
+  <span class="token keyword">const</span> foo <span class="token operator">=</span> <span class="token string">'bar'</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span>
 </code></pre>
 ```
@@ -107,4 +112,4 @@ In both cases, the `prism-ignore` attribute/class will be removed and highlighti
 [github-ci]: https://github.com/posthtml/posthtml-prism/actions
 [github-ci-shield]: https://img.shields.io/github/workflow/status/posthtml/posthtml-prism/Node.js%20CI
 [license]: ./license
-[mit-shield]: https://img.shields.io/npm/l/posthtml-prism.svg
+[license-shield]: https://img.shields.io/npm/l/posthtml-prism.svg
