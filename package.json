@@ -1,7 +1,7 @@
 {
   "name": "posthtml-prism",
   "description": "PostHTML code syntax highlighting with Prism",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "author": "Cosmin Popovici (https://github.com/cossssmin)",
   "bugs": "https://github.com/posthtml/posthtml-prism/issues",
