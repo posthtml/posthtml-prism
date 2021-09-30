@@ -1,7 +1,7 @@
 'use strict';
 
 const Prism = require('prismjs');
-const render = require('posthtml-render').default;
+const {render} = require('posthtml-render');
 const loadLanguages = require('prismjs/components/');
 
 function createPrismPlugin(options) {
