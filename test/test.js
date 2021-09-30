@@ -48,6 +48,6 @@ test('Preserves existing classes', t => {
 
 test('Throws error when using an invalid language in class name', t => {
   return error('invalid_language', error => {
-    t.is(error.message, `Cannot read property 'rest' of undefined`);
+    t.is(error.message, `Cannot read properties of undefined (reading 'rest')`);
   });
 });
