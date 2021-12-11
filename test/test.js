@@ -10,7 +10,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const fixture = file => readFileSync(path.join(__dirname, 'fixtures', `${file}.html`), 'utf8')
 const expected = file => readFileSync(path.join(__dirname, 'expected', `${file}.html`), 'utf8')
 
-const error = (name, cb) => posthtml([highlight()]).process(fixture(name)).catch(cb)
 const clean = html => html.replace(/[^\S\r\n]+$/gm, '').trim()
 
 const process = (t, name, options, log = false) => {
@@ -48,8 +47,8 @@ test('Preserves existing classes', t => {
   return process(t, 'preserves_classes')
 })
 
-test('Throws error when using an invalid language in class name', t => {
-  return error('invalid_language', error => {
-    t.is(error.message, `Cannot read property 'rest' of undefined`)
-  })
+test('Throws error when using an invalid language in class name', async t => {
+  await t.throwsAsync(async () => {
+    await process(t, 'invalid_language')
+  }, {instanceOf: TypeError})
 })
