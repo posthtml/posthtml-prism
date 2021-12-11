@@ -39,17 +39,17 @@ $ npm i posthtml posthtml-prism
 ## Usage
 
 ```js
-const fs = require('fs')
-const posthtml = require('posthtml')
-const highlight = require('posthtml-prism')
+import {readFileSync, writeFileSync} from 'node:fs'
+import posthtml from 'posthtml'
+import highlight from 'posthtml-prism'
 
-const source = fs.readFileSync('./before.html')
+const html = readFileSync('./before.html', 'utf8')
 
 posthtml([
-    highlight({ inline: true  })
-  ])
-  .process(source)
-  .then(result => fs.writeFileSync('./after.html', result.html))
+  highlight({ inline: true  })
+])
+  .process(html)
+  .then(result => writeFileSync('./after.html', result.html))
 ```
 
 ## Options

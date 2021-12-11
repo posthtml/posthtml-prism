@@ -7,12 +7,13 @@
   "bugs": "https://github.com/posthtml/posthtml-prism/issues",
   "homepage": "https://github.com/posthtml/posthtml-prism",
   "repository": "posthtml/posthtml-prism",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "engines": {
-    "node": ">=10"
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "scripts": {
-    "test": "nyc ava",
+    "test": "c8 ava",
     "pretest": "xo",
     "release": "np"
   },
@@ -27,15 +28,15 @@
     "pre"
   ],
   "dependencies": {
-    "prismjs": "^1.19.0"
+    "prismjs": "^1.25.0"
   },
   "devDependencies": {
-    "ava": "^3.5.0",
-    "np": "^7.4.0",
-    "nyc": "^15.0.0",
-    "posthtml": "^0.16.4",
+    "ava": "^3.15.0",
+    "c8": "^7.10.0",
+    "np": "^7.6.0",
+    "posthtml": "^0.16.5",
     "posthtml-render": "^3.0.0",
-    "xo": "^0.39.1"
+    "xo": "^0.47.0"
   },
   "peerDependencies": {
     "posthtml-render": "^3.0.0"
