@@ -50,5 +50,5 @@ test('Preserves existing classes', t => {
 test('Throws error when using an invalid language in class name', async t => {
   await t.throwsAsync(async () => {
     await process(t, 'invalid_language')
-  }, {instanceOf: TypeError})
+  }, {instanceOf: Error})
 })
