@@ -8,7 +8,6 @@ const {readFileSync} = require('fs');
 const fixture = file => readFileSync(path.join(__dirname, 'fixtures', `${file}.html`), 'utf8');
 const expect = file => readFileSync(path.join(__dirname, 'expect', `${file}.html`), 'utf8');
 
-const error = (name, cb) => posthtml([highlight()]).process(fixture(name)).catch(cb);
 const clean = html => html.replace(/[^\S\r\n]+$/gm, '').trim();
 
 const process = (t, name, options, log = false) => {
