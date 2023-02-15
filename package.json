@@ -9,7 +9,7 @@
   "repository": "posthtml/posthtml-prism",
   "main": "index.js",
   "engines": {
-    "node": ">=10"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "test": "nyc ava",
