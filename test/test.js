@@ -1,9 +1,8 @@
+const path = require('path');
+const {readFileSync} = require('fs');
 const test = require('ava');
 const posthtml = require('posthtml');
 const highlight = require('..');
-
-const path = require('path');
-const {readFileSync} = require('fs');
 
 const fixture = file => readFileSync(path.join(__dirname, 'fixtures', `${file}.html`), 'utf8');
 const expect = file => readFileSync(path.join(__dirname, 'expect', `${file}.html`), 'utf8');
