@@ -5,8 +5,8 @@
   Compile-time syntax highlighting for code blocks with [Prism](https://prismjs.com/)
 
   [![Version][npm-version-shield]][npm]
-  [![License][license-shield]][license]
   [![Build][github-ci-shield]][github-ci]
+  [![License][license-shield]][license]
   [![Downloads][npm-stats-shield]][npm-stats]
 </div>
 
@@ -110,6 +110,6 @@ In both cases, the `prism-ignore` attribute/class will be removed and highlighti
 [npm-stats]: http://npm-stat.com/charts.html?package=posthtml-prism&author=&from=&to=
 [npm-stats-shield]: https://img.shields.io/npm/dt/posthtml-prism.svg?maxAge=2592000
 [github-ci]: https://github.com/posthtml/posthtml-prism/actions
-[github-ci-shield]: https://img.shields.io/github/workflow/status/posthtml/posthtml-prism/Node.js%20CI
+[github-ci-shield]: https://github.com/posthtml/posthtml-prism/actions/workflows/nodejs.yml/badge.svg
 [license]: ./license
 [license-shield]: https://img.shields.io/npm/l/posthtml-prism.svg
